@@ -66,6 +66,7 @@ public class Main {
 
     public static String calc(String input) throws RuntimeException {
         final boolean roman;
+        input = input.trim();
         if (input.matches("(\\d+\\s*[-+/*]\\s*\\d+)")) {
             roman = false;
         }
