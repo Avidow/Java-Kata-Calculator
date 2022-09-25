@@ -35,7 +35,7 @@ public class Main {
         }
         while (arabic - 50 >= 0) {
             result.append("L");
-            arabic -= 500;
+            arabic -= 50;
         }
         if (arabic - 40 >= 0) {
             result.append("LX");
@@ -105,7 +105,8 @@ public class Main {
         if (roman && result < 1) {
             throw new RuntimeException("Roman result is lesser than 1");
         }
-        return roman ? arabicToRoman(result) : ("" + result);
+        return "" + result;
+//        return roman ? arabicToRoman(result) : ("" + result);
     }
 
     public static void main(String[] args) {
