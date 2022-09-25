@@ -105,8 +105,7 @@ public class Main {
         if (roman && result < 1) {
             throw new RuntimeException("Roman result is lesser than 1");
         }
-        return "" + result;
-//        return roman ? arabicToRoman(result) : ("" + result);
+        return roman ? arabicToRoman(result) : ("" + result);
     }
 
     public static void main(String[] args) {
