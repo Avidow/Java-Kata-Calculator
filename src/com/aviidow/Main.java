@@ -27,7 +27,7 @@ public class Main {
         StringBuilder result = new StringBuilder();
         while (arabic - 100 >= 0) {
             result.append("C");
-            arabic -= 500;
+            arabic -= 100;
         }
         if (arabic - 90 >= 0) {
             result.append("XC");
